@@ -62,7 +62,7 @@
                                 <rect key="frame" x="107.5" y="535" width="199" height="56"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="199" id="5dH-NW-KpR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="199" id="5dH-NW-KpR"/>
                                     <constraint firstAttribute="height" constant="56" id="Pwx-TF-uvN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
@@ -71,6 +71,9 @@
                                     <color key="titleColor" red="0.048926807940006256" green="0.037180416285991669" blue="0.11466140300035477" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.91152489185333252" green="0.48093116283416748" blue="0.39669346809387207" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="ramdomDiceButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ebh-sS-PDE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -94,6 +97,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="firstDiceImageView" destination="I0L-17-SZS" id="R5i-r1-zxt"/>
+                        <outlet property="secondDiceImageView" destination="UXo-b1-YTb" id="k4j-P0-CSJ"/>
+                        <outlet property="thirdDiceImageView" destination="Nms-tF-vKv" id="4mO-MH-8Mx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
