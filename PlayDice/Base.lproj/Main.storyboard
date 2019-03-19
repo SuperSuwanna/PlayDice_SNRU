@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,96 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayDice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper1" translatesAutoresizingMaskIntoConstraints="NO" id="LxE-oy-C1p">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="mDX-c3-LtI">
+                                <rect key="frame" x="132" y="120" width="150" height="150"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Zbm-Lc-xsC"/>
+                                    <constraint firstAttribute="height" constant="150" id="hCI-p8-ebY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Dice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2h-cG-Pzr">
+                                <rect key="frame" x="137" y="303" width="140.5" height="38"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="31"/>
+                                <color key="textColor" red="0.048926807940006256" green="0.037180416285991669" blue="0.11466140300035477" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <size key="shadowOffset" width="-2" height="-1"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice4" translatesAutoresizingMaskIntoConstraints="NO" id="Nms-tF-vKv">
+                                <rect key="frame" x="265" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8Ut-JS-3Rm"/>
+                                    <constraint firstAttribute="width" constant="100" id="Gig-sa-bBy"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice4" translatesAutoresizingMaskIntoConstraints="NO" id="UXo-b1-YTb">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hZZ-eb-2iO"/>
+                                    <constraint firstAttribute="width" constant="100" id="jTp-Jl-7iR"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice4" translatesAutoresizingMaskIntoConstraints="NO" id="I0L-17-SZS">
+                                <rect key="frame" x="49" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Czb-D0-nx7"/>
+                                    <constraint firstAttribute="width" constant="100" id="oKF-oc-BOR"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4L-Ba-XKN">
+                                <rect key="frame" x="107.5" y="535" width="199" height="56"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="5dH-NW-KpR"/>
+                                    <constraint firstAttribute="height" constant="56" id="Pwx-TF-uvN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Ramdom Dice">
+                                    <color key="titleColor" red="0.048926807940006256" green="0.037180416285991669" blue="0.11466140300035477" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.91152489185333252" green="0.48093116283416748" blue="0.39669346809387207" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N2h-cG-Pzr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4qX-xk-9KC"/>
+                            <constraint firstItem="Nms-tF-vKv" firstAttribute="top" secondItem="N2h-cG-Pzr" secondAttribute="bottom" constant="57" id="6Lk-lP-zbp"/>
+                            <constraint firstItem="LxE-oy-C1p" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BTI-Gt-nVZ"/>
+                            <constraint firstItem="E4L-Ba-XKN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EGg-ht-1KF"/>
+                            <constraint firstItem="I0L-17-SZS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-108" id="EhD-h1-kpM"/>
+                            <constraint firstItem="LxE-oy-C1p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jhv-Di-5NV"/>
+                            <constraint firstItem="LxE-oy-C1p" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Nar-os-djk"/>
+                            <constraint firstItem="LxE-oy-C1p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VC3-tZ-pKx"/>
+                            <constraint firstItem="mDX-c3-LtI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="aI8-PZ-NxY"/>
+                            <constraint firstItem="E4L-Ba-XKN" firstAttribute="top" secondItem="Nms-tF-vKv" secondAttribute="bottom" constant="37" id="gXj-Oo-WGv"/>
+                            <constraint firstItem="UXo-b1-YTb" firstAttribute="top" secondItem="N2h-cG-Pzr" secondAttribute="bottom" constant="57" id="i69-gH-h5Q"/>
+                            <constraint firstItem="UXo-b1-YTb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o8H-pp-5rX"/>
+                            <constraint firstItem="Nms-tF-vKv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="108" id="qEZ-dh-pKa"/>
+                            <constraint firstItem="I0L-17-SZS" firstAttribute="top" secondItem="N2h-cG-Pzr" secondAttribute="bottom" constant="57" id="rhp-ZI-EPU"/>
+                            <constraint firstItem="mDX-c3-LtI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tey-aG-smj"/>
+                            <constraint firstItem="N2h-cG-Pzr" firstAttribute="top" secondItem="mDX-c3-LtI" secondAttribute="bottom" constant="33" id="yYr-JO-7Du"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dice4" width="42.5" height="42.5"/>
+        <image name="Logo" width="42.5" height="42.5"/>
+        <image name="wallpaper1" width="333" height="333"/>
+    </resources>
 </document>
